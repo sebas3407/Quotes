@@ -18,7 +18,5 @@ class Quote: Codable {
         self.quote = quote
         self.author = author
         self.cat = cat
-    }
-    
-    
+    }    
 }
