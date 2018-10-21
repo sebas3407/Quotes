@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA006F3D217CF16E00A5392C /* QuoteBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA006F3C217CF16E00A5392C /* QuoteBook.swift */; };
+		AA006F40217D0EF900A5392C /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA006F3F217D0EF900A5392C /* Quote.swift */; };
 		AA4D6EC8217CD92C001CFE56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4D6EC7217CD92C001CFE56 /* AppDelegate.swift */; };
 		AA4D6ECA217CD92C001CFE56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4D6EC9217CD92C001CFE56 /* ViewController.swift */; };
 		AA4D6ECD217CD92C001CFE56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA4D6ECB217CD92C001CFE56 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA006F3C217CF16E00A5392C /* QuoteBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteBook.swift; sourceTree = "<group>"; };
+		AA006F3F217D0EF900A5392C /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		AA4D6EC4217CD92C001CFE56 /* Quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA4D6EC7217CD92C001CFE56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA4D6EC9217CD92C001CFE56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA006F3E217D0EE200A5392C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA006F3F217D0EF900A5392C /* Quote.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		AA4D6EBB217CD92C001CFE56 = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +66,14 @@
 		AA4D6EC6217CD92C001CFE56 /* Quotes */ = {
 			isa = PBXGroup;
 			children = (
+				AA006F3E217D0EE200A5392C /* Models */,
 				AA4D6EC7217CD92C001CFE56 /* AppDelegate.swift */,
 				AA4D6EC9217CD92C001CFE56 /* ViewController.swift */,
 				AA4D6ECB217CD92C001CFE56 /* Main.storyboard */,
 				AA4D6ECE217CD92D001CFE56 /* Assets.xcassets */,
 				AA4D6ED0217CD92D001CFE56 /* LaunchScreen.storyboard */,
 				AA4D6ED3217CD92D001CFE56 /* Info.plist */,
+				AA006F3C217CF16E00A5392C /* QuoteBook.swift */,
 			);
 			path = Quotes;
 			sourceTree = "<group>";
@@ -135,6 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA006F40217D0EF900A5392C /* Quote.swift in Sources */,
+				AA006F3D217CF16E00A5392C /* QuoteBook.swift in Sources */,
 				AA4D6ECA217CD92C001CFE56 /* ViewController.swift in Sources */,
 				AA4D6EC8217CD92C001CFE56 /* AppDelegate.swift in Sources */,
 			);
