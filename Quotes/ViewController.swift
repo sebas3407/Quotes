@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var num: Int = Int.random(in: 0..<quoteBook.quotes.count)
+        let num: Int = Int.random(in: 0..<quoteBook.quotes.count)
         lbl_quote.text = quoteBook.quotes[num]
         DownloadQuote()
     }
@@ -31,10 +31,12 @@ class ViewController: UIViewController {
     
     func DownloadQuote()
     {
-        let urlString = "https://talaikis.com/api/quotes/random/"
+        let urlString = "http://quotes.rest/qod.json"
         guard let url = URL(string: urlString) else { return }
         
-        URLSession.shared.dataTask(with: url) { (data, response, error) in
+        URLSession.shared.dataTask(with: url) {
+            (data, response, error) in
+            
             if error != nil {
                 print(error!.localizedDescription)
             }
@@ -43,13 +45,12 @@ class ViewController: UIViewController {
             
             //Implement JSON decoding and parsing
             do {
-                let articlesData = try JSONDecoder().decode(Quote.self, from: data)
+                let articlesData = try JSONDecoder().decode(DailyQuote.self, from: data)
                 
                 DispatchQueue.main.async {
-                    print(articlesData.quote)
+                    self.lbl_quote.text = articlesData.contents.quotes[0].quote
                 }
                 
-                self.lbl_quote.text = articlesData.quote
             } catch let jsonError {
                 print(jsonError)
             }
