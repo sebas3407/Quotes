@@ -15,9 +15,6 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var lbl_author: UILabel!
     
-    // STRUCTS
-    var quoteBook: QuoteBook = QuoteBook()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     
@@ -33,20 +30,21 @@ class ViewController: UIViewController {
             (data, response, error) in
             
             if error != nil {
-                print(error!.localizedDescription)
+                print("Invalid Url")
             }
     
             guard let data = data else { return }
             
             //Implement JSON decoding and parsing
             do {
+                
                 let articlesData = try JSONDecoder().decode(DailyQuote.self, from: data)
                 
                 DispatchQueue.main.async {
                     
-                    self.lbl_quote.text = articlesData.contents.quotes[0].quote
-                    
-                    self.lbl_quote.text = articlesData.contents.quotes[0].author
+//                    self.lbl_quote.text = articlesData.contents[0].quotes[0].quote
+//                    
+//                    self.lbl_quote.text = articlesData.contents.quotes[0].author
                 }
                 
             } catch let jsonError {

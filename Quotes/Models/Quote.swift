@@ -9,8 +9,8 @@
 import Foundation
 
 class DailyQuote: Codable {
-    let success: Success
-    let contents: Contents
+    let success: Success?
+    let contents: Contents?
     
     init(success: Success, contents: Contents) {
         self.success = success
@@ -35,9 +35,9 @@ class Quote: Codable {
     let permalink: String
     let title: String
     let background: String
-    let id: String
+    let id: String??
     
-    init(quote: String, length: String, author: String, tags: [String], category: String, date: String, permalink: String, title: String, background: String, id: String) {
+    init(quote: String, length: String, author: String, tags: [String], category: String, date: String, permalink: String, title: String, background: String, id: String??) {
         self.quote = quote
         self.length = length
         self.author = author
