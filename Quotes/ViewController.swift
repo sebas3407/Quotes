@@ -27,33 +27,37 @@ class ViewController: UIViewController {
     
     func DownloadQuote()
     {
+        
+        //Implementing URLSession
         let urlString = "http://quotes.rest/qod.json"
         guard let url = URL(string: urlString) else { return }
         
-        URLSession.shared.dataTask(with: url) {
-            (data, response, error) in
-            
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
             if error != nil {
-                print("Invalid Url")
+                print(error!.localizedDescription)
             }
-    
-            guard let data = data else { return }
             
-            //Implement JSON decoding and parsing
+            guard let dataFromUrl = data else { return }
             do {
                 
-                let articlesData = try JSONDecoder().decode(DailyQuote.self, from: data)
+                let articlesData = try JSONDecoder().decode(DailyQuote.self, from: dataFromUrl)
                 
                 DispatchQueue.main.async {
                     
-//                    self.lbl_quote.text = articlesData.contents[0].quotes[0].quote
-//                    
-//                    self.lbl_quote.text = articlesData.contents.quotes[0].author
+                    self.lbl_quote.text = articlesData.contents.quotes[0].quote
+
+                    self.lbl_author.text = articlesData.contents.quotes[0].author
                 }
                 
             } catch let jsonError {
                 print(jsonError)
             }
+            
             }.resume()
+        //End implementing URLSession
+        
+        
+
+
     }
 }
