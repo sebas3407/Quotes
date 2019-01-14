@@ -15,15 +15,19 @@ struct DailyQuote: Codable {
 
 struct Contents: Codable {
     let quotes: [Quote]
-    let copyright: String
+    let copyright: String = ""
 }
 
 struct Quote: Codable {
-    let quote, author, length: String
-    let tags: [String]
-    let category, title, date : String
+    let quote : String
+    let author : String = "Anonym"
+    let length: String = ""
+    let tags: [String] = [""]
+    let category : String = ""
+    let title : String = ""
+    let date : String = ""
 }
 
 struct Success: Codable {
-    let total: Int
+    let total: Int = 0
 }

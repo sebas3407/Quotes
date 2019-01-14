@@ -17,26 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you don't have room to fail you dont have room to grothw" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3kC-0H-PIG">
-                                <rect key="frame" x="59" y="44" width="295" height="818"/>
-                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="27"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kuT-p0-VO6">
-                                <rect key="frame" x="172" y="769" width="69" height="30"/>
-                                <color key="backgroundColor" red="0.19800479602640017" green="0.15912622658762904" blue="0.86848283678756477" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="5OO-yF-kqd"/>
-                                    <constraint firstAttribute="width" constant="69" id="Xa5-hw-9vJ"/>
-                                </constraints>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="ShowQuotes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ex3-lr-STb"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="circulo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ecl-ea-L0W">
                                 <rect key="frame" x="22" y="560" width="56" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -60,9 +40,8 @@
                                 <rect key="frame" x="267" y="793" width="48" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jonathan Mildenhall" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhm-lx-VLO">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jonathan Mildenhall" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhm-lx-VLO">
                                 <rect key="frame" x="230" y="522" width="137" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -75,16 +54,20 @@
                                 <rect key="frame" x="-32" y="686" width="78" height="151"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="If you don't have room to fail you dont have room to grothw" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3kC-0H-PIG">
+                                <rect key="frame" x="69" y="297" width="277" height="303"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.12941176470588234" green="0.13333333333333333" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="3kC-0H-PIG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4pg-Do-OJm"/>
-                            <constraint firstItem="3kC-0H-PIG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="59" id="PYp-YM-QS3"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="kuT-p0-VO6" secondAttribute="trailing" constant="122" id="eeP-fv-wtL"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3kC-0H-PIG" secondAttribute="trailing" constant="60" id="gJV-eS-dfg"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kuT-p0-VO6" secondAttribute="bottom" constant="63" id="nf0-fD-wQc"/>
-                            <constraint firstItem="kuT-p0-VO6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="152" id="vt2-H2-Kxw"/>
-                            <constraint firstItem="3kC-0H-PIG" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="zid-gK-jgv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yhm-lx-VLO" secondAttribute="trailing" constant="27" id="EkY-u2-jAK"/>
+                            <constraint firstItem="yhm-lx-VLO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="210" id="Wjw-bI-lhl"/>
+                            <constraint firstItem="yhm-lx-VLO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="478" id="qfu-T9-uhv"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="yhm-lx-VLO" secondAttribute="bottom" constant="322" id="sdv-c3-q0z"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
