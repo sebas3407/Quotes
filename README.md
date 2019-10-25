@@ -10,5 +10,5 @@ Quotes is a simple iOS app that shows you a daily quote from an Third-Party API
 
 ### Credits
 
-- **Sebastian Ortiz Velez** - *Developer* http://sebastianortiz.tk
+- **Sebastian Ortiz Velez** - *Developer*
 - **Will & Bourne** - *App inspired in the design of Will & Bourne* https://dribbble.com/willandbourne
